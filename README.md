@@ -1,6 +1,7 @@
 # Monitoring
+Este proyecto despliega un stack de monitoreo basado en **Prometheus**, **Grafana**, **Node Exporter**, **cAdvisor** y **Redis** usando Docker Compose.
 
-## Apps:
+## Apps o Servicios:
 
 Node Exporter → métricas del host
 
@@ -12,7 +13,8 @@ Grafana → visualiza esas métricas con dashboards
 
 Redis → soporte adicional (cache / almacenamiento temporal)
 
-**Puertos expuestos:**
+
+## Puertos expuestos:
 
 - cadvisor: `localhost:8080`
 
@@ -21,5 +23,12 @@ Redis → soporte adicional (cache / almacenamiento temporal)
 - Prometheus: `localhost:9090`
 
 - Node Exporter → `http://localhost:9100` (solo dentro de la red Docker)
-  
-- Redis → Puerto `6379` (no expuesto al host, solo en red interna) 
+
+- Redis → Puerto `6379` (no expuesto al host, solo en red interna)
+
+## Cómo usar:
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/tu-repo.git
+   cd tu-repo 
+   ```
